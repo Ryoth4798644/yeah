@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+.video-bg {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.video-bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 110%;
+    height: 110vh;
+    object-fit: cover;
+}
+.effects {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+}
+.video-bg__content {
+    z-index: 2;
+    color: #ffffff;
+    font-size: 50px;
+}
+.main {
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.content2 {
+background-color: white;
+height: 500px;
+width: 500px;
+backdrop-filter: blur(0.5px);
+opacity: 95px;
+background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border-radius: 20px;
+border:1px solid rgba(255, 255, 255, 0.18);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.video1 {
+height: 150px ;
+}
+
+.yes {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding-top: 35px;
+}
+
+.yes:hover {
+color: dimgray;
+transition: 0.5s;
+}
+
+.tg {
+   display: flex;
+   justify-content: center;
+   text-decoration: none;
+   padding-top: 35px;
+   color: white;
+   font-size: 25px;
+}
+
+.tg:hover {
+    color: dimgray;
+    transition: 0.5s;
+}
+
+.discord {
+position: fixed;
+width: 45px;
+padding-left: 110px;
+top: 28px;
+}
+
+.telega {
+    position: fixed;
+    left: 80px;
+    padding-top: 35px;
+    width: 40px;
+}
+
+.bio {
+position: relative;
+display: flex;
+justify-content: center;
+color: white;
+text-decoration: none;
+font-size: 15px;
+top: 330px;
+}
+
+.bio:hover {
+color: dimgray;
+transition: 0.5s;
+}
+
+@media (max-width: 500px) {
+    .content2 {
+        width: 450px;
+        height: 450px;
+    }
+
+    .bio {
+     position: relative;
+     bottom: 35px;
+     left: 200px;
+    }
+}
+
+@media (max-width: 495px) {
+    .telega {
+       padding-right: 45px;
+    }
+
+    .tg {
+    padding-left: 20px;
+    }
+
+    .yes {
+        padding-left: 9px;
+    }
+}
+
+@media (max-width: 400px) {
+    .content2 {
+        width: 375px;
+        height: 375px;
+    }
+
+    .bio {
+    position: absolute;
+    left: 15px;
+    right: 25px;
+    }
+
+    .discord {
+      position: relative;
+      top: 95px;
+      right: 40px;
+    }
+
+    .telega {
+      position: absolute;
+      left: 37px;
+    }
+}
+
+@media (max-width: 375px) {
+    .content2 {
+        width: 335px;
+    }
+}
+
+@media (max-width: 414px) {
+    .content2 {
+       width: 405px;
+    }
+
+    .bio {
+        position: absolute;
+        left: 15px;
+        right: 25px;
+    }
+
+    .discord {
+        position: relative;
+        top: 95px;
+        right: 40px;
+      }
+
+      .telega {
+        position: absolute;
+        left: 37px;
+      }
+
+
+}
